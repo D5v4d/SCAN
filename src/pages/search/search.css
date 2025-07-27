@@ -57,7 +57,7 @@
   left: 50%;
   width: 16px;
   height: 16px;
-  background: url('/src/assets/svg/search/check-mark.svg') no-repeat center;
+  background: url('/assets/svg/search/check-mark.svg') no-repeat center;
   background-size: contain;
   border: none;
   transform: translate(-50%, -50%);

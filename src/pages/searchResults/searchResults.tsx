@@ -69,8 +69,6 @@ const SearchResults = () => {
     const AAA = () => {
         if (listDocuments.data.length < items.length) {
             dispatch(upListDocuments())
-        } else {
-            console.log("no")
         }
     }
 
@@ -191,7 +189,7 @@ const SearchResults = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="mb-[109px] text-center max-sm:mb-[57px]">
+                    <div className="mb-[109px] w-[1320px] text-center max-sm:mb-[57px]">
                         {listDocuments.isLoadinglistDocuments &&
                             <div className="flex flex-col gap-2.5 items-center">
                                 <Spin indicator={<LoadingOutlined style={{ fontSize: 50, color: '#797979' }} spin />} />
