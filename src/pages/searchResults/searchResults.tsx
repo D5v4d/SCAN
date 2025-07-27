@@ -66,7 +66,7 @@ const SearchResults = () => {
         }
     }
 
-    const AAA = () => {
+    const AddDocuments = () => {
         if (listDocuments.data.length < items.length) {
             dispatch(upListDocuments())
         }
@@ -206,7 +206,7 @@ const SearchResults = () => {
                                 <span className="text-center text-[20px] text-amber-600">Нет документов</span>
                                 :
                                 (listDocuments.data.length < items.length &&
-                                    <button onClick={AAA} className="w-[305px] h-[59px] bg-[#5970FF] text-white font-medium rounded-[5px] text-[22px] cursor-pointer max-sm:w-[335px] max-sm:block">
+                                    <button onClick={AddDocuments} className="w-[305px] h-[59px] bg-[#5970FF] text-white font-medium rounded-[5px] text-[22px] cursor-pointer max-sm:w-[335px] max-sm:block">
                                         Показать больше
                                     </button>)
                             )
