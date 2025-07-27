@@ -120,12 +120,12 @@ const Search = () => {
                         </span>
                     </div>
                     <img
-                        src="/src/assets/svg/search/document.svg"
+                        src="/assets/svg/search/document.svg"
                         alt="document"
                         className="ml-[238px] mt-[65px] max-sm:absolute max-sm:ml-[277px] max-sm:mt-[-134px] max-sm:w-[58px] max-sm:h-[71px]"
                     />
                     <img
-                        src="/src/assets/svg/search/folders.svg"
+                        src="/assets/svg/search/folders.svg"
                         alt="folders"
                         className="ml-[166px] mt-[65px] max-sm:hidden"
                     />
@@ -164,7 +164,7 @@ const Search = () => {
                                         { value: 'Позитивная' },
                                         { value: 'Негативная' },
                                     ]}
-                                    suffixIcon={<img src="/src/assets/svg/search/down-arrow.svg" alt="down-arrow" />}
+                                    suffixIcon={<img src="/assets/svg/search/down-arrow.svg" alt="down-arrow" />}
                                 />
                             </label>
                             <label>
@@ -198,7 +198,7 @@ const Search = () => {
                                         format="DD.MM.YYYY"
                                         placeholder="Дата начала"
                                         style={{ color: `${!searchRange.errorDate ? 'black' : '#FF5959'}`, paddingLeft: `${searchRange.startDate ? '17px' : '44px'}`, marginRight: '20px' }}
-                                        suffixIcon={<img src="/src/assets/svg/search/down-arrow.svg" alt="down-arrow" />}
+                                        suffixIcon={<img src="/assets/svg/search/down-arrow.svg" alt="down-arrow" />}
                                     />
                                     <DatePicker
                                         required
@@ -208,7 +208,7 @@ const Search = () => {
                                         format="DD.MM.YYYY"
                                         placeholder="Дата конца"
                                         style={{ color: `${!searchRange.errorDate ? 'black' : '#FF5959'}`, paddingLeft: `${searchRange.endDate ? '17px' : '44px'}` }}
-                                        suffixIcon={<img src="/src/assets/svg/search/down-arrow.svg" alt="down-arrow" />}
+                                        suffixIcon={<img src="/assets/svg/search/down-arrow.svg" alt="down-arrow" />}
                                     />
                                     {searchRange.errorDate && <div className='absolute w-[372px] mt-[7px] text-center text-[#FF5959]'><span>Введите корректные данные</span></div>}
                                 </div>
@@ -234,7 +234,7 @@ const Search = () => {
                             <span className='text-[#949494]'>* Обязательные к заполнению поля</span>
                         </div>
                     </form>
-                    <img src="/src/assets/img/rocket.png" alt="rocket" className='w-[434px] h-[485px] ml-[87px] mt-[67px] max-sm:ml-[22px] max-sm:mt-[24px] max-sm:w-[339px] max-sm:h-[403px] ' />
+                    <img src="/assets/img/rocket.png" alt="rocket" className='w-[434px] h-[485px] ml-[87px] mt-[67px] max-sm:ml-[22px] max-sm:mt-[24px] max-sm:w-[339px] max-sm:h-[403px] ' />
                 </div>
             </section>
         </main>

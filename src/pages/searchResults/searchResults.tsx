@@ -110,14 +110,14 @@ const SearchResults = () => {
                         <h1 style={{ fontFamily: 'Ferry' }} className="text-[40px] mb-[36px] max-sm:text-[28px] max-sm:mb-[21px] max-sm:w-[344px]">Ищем. Скоро <br /> будут результаты</h1>
                         <span className="block text-[20px] w-[405px] max-sm:text-[18px] ">Поиск может занять некоторое время, просим сохранять терпение.</span>
                     </div>
-                    <img src="/src/assets/img/search-result.png" alt="search-result" className="max-sm:mt-[21px] mb-[59px]" />
+                    <img src="/assets/img/search-result.png" alt="search-result" className="max-sm:mt-[21px] mb-[59px]" />
                 </div>
                 <div className="mt-[-20px] max-sm:mt-[0px]">
                     <h1 style={{ fontFamily: 'Ferry' }} className="text-[30px] mb-[17px] max-sm:text-[28px] max-sm:mb-[10px]">Общая сводка</h1>
                     <span className="text-[18px] text-[#949494]">Найдено {summary.totalOptions} вариантов</span>
                     <div className="flex gap-1 mt-[27px] mb-[107px] max-sm:mt-[34px] max-sm:mb-[57px] max-sm:gap-0">
                         <button disabled={startIndex < 0} className=" cursor-pointer" onClick={handlePrevPage}>
-                            <img className={`${startIndex > 0 ? 'opacity-70' : 'opacity-20'}`} src="/src/assets/svg/searchResults/left-arrow.svg" alt="left-arrow" />
+                            <img className={`${startIndex > 0 ? 'opacity-70' : 'opacity-20'}`} src="/assets/svg/searchResults/left-arrow.svg" alt="left-arrow" />
                         </button>
                         <div className="w-[1260px] border-2 border-[#029491] rounded-[10px] flex max-sm:block max-sm:w-[298px]"> 
                             <div className="w-[133px] h-[158px] bg-[#029491] rounded-tl-[5px] rounded-bl-[5px] flex flex-col gap-[19px] px-[28px] py-[15px] text-[20px] text-[#FFFFFF] max-sm:px-[15px] max-sm:py-[23px] max-sm:block max-sm:w-auto max-sm:h-auto max-sm:rounded-bl-[0px]">
@@ -160,7 +160,7 @@ const SearchResults = () => {
                             )}
                         </div>
                         <button disabled={endIndex > summary.data.length} className=" cursor-pointer" onClick={handleNextPage}>
-                            <img className={`${endIndex < summary.data.length ? 'opacity-70' : 'opacity-20'}`} src="/src/assets/svg/searchResults/right-arrow.svg" alt="right-arrow" />
+                            <img className={`${endIndex < summary.data.length ? 'opacity-70' : 'opacity-20'}`} src="/assets/svg/searchResults/right-arrow.svg" alt="right-arrow" />
                         </button>
                     </div>
                 </div>

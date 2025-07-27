@@ -38,19 +38,19 @@ const Header = () => {
             <Link className="w-[135px] block" to="/">
                 <img
                     className={`max-sm:w-[111px] max-sm:h-[36px] block ${menuActive && 'max-sm:mt-[-16px] '}`}
-                    src={`/src/assets/svg/${menuActive ? 'logo-header-mobail' : "logo-header"}.svg`}  
+                    src={`/assets/svg/${menuActive ? 'logo-header-mobail' : "logo-header"}.svg`}  
                     alt="Logo"
                 />
             </Link>
             <button onClick={toggleMenu} className={`hidden max-sm:ml-[173px] max-sm:block cursor-pointer ${menuActive && 'max-sm:mt-[-18px] '}`}>
                 {menuActive ?
                     <img
-                        src="/src/assets/svg/cross.svg"
+                        src="/assets/svg/cross.svg"
                         alt="cross"
                     />
                     :
                     <img
-                        src="/src/assets/svg/burger.svg"
+                        src="/assets/svg/burger.svg"
                         alt="burger"
                     />}
             </button>
@@ -89,7 +89,7 @@ const Header = () => {
                                 Выйти
                             </button>
                         </div>
-                        <img src="/src/assets/img/user.png" alt="Logo" />
+                        <img src="/assets/img/user.png" alt="Logo" />
                     </div>
                 </div>
             }

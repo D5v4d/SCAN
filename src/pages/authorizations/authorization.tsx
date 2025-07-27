@@ -58,10 +58,10 @@ const Authorization = () => {
                 <div className="w-[745px] mr-[65px] max-sm:w-[335px] max-sm:mr-[0px]">
                     <h1 style={{ fontFamily: 'Ferry' }} className="text-[40px] max-sm:hidden">Для оформления подписки на тариф, необходимо авторизоваться.</h1>
                     <h1 style={{ fontFamily: 'Ferry' }} className="hidden max-sm:block max-sm:text-[22px] max-sm:mb-[106px]">Для оформления подписки <br></br>на тариф, необходимо авторизоваться.</h1>
-                    <img src="/src/assets/img/characters.png" alt="characters" className="pl-[117px] pt-[14px] pb-[23px] max-sm:hidden" />
+                    <img src="/assets/img/characters.png" alt="characters" className="pl-[117px] pt-[14px] pb-[23px] max-sm:hidden" />
                 </div>
                 <div className="w-[429px] h-[523px] card-shadow rounded-[10px] px-[25px] pb-[39px] pt-[25px] max-sm:h-[504px] max-sm:w-[335px] max-sm:px-[15px] max-sm:pb-[20px]">
-                    <img src="/src/assets/svg/authorization/castle.svg" alt="castle" className="mt-[-85px] ml-[-75px] absolute max-sm:ml-[64px] max-sm:mt-[-105px]" />
+                    <img src="/assets/svg/authorization/castle.svg" alt="castle" className="mt-[-85px] ml-[-75px] absolute max-sm:ml-[64px] max-sm:mt-[-105px]" />
                     <button onClick={() => (entrance("enter"))} className={`border-b-2 w-[151px] h-[29px] mr-[15px] cursor-pointer ${authorization.entrance === 'enter' ? 'text-[#029491]' : 'text-[#C7C7C7]'} max-sm:w-[103px] max-sm:text-[14px]`}>Войти</button>
                     <button disabled onClick={() => (entrance("register"))} className={`border-b-2 w-[213px] h-[29px] cursor-pointer ${authorization.entrance === 'register' ? 'text-[#029491]' : 'text-[#C7C7C7]'} max-sm:w-[182px] max-sm:text-[14px]`}>Зарегистрироваться</button>
                     <form className="mt-[30px]" onSubmit={handleSubmit}>
@@ -93,14 +93,14 @@ const Authorization = () => {
                     <div className="mt-[20px] mb-[39px] max-sm:mb-[0px]">
                         <span className="text-[#949494]">Войти через:</span>
                         <div className="flex gap-[10px] mt-[15px]">
-                            <button disabled className="w-[96px] h-[31px] pl-[20px] border border-[#5970FF80] cursor-pointer rounded-[3px]"><img src="/src/assets/svg/authorization/facebook.svg" alt="google" /></button>
-                            <button disabled className="w-[96px] h-[31px] pl-[20px] border border-[#5970FF80] cursor-pointer rounded-[3px]"><img src="/src/assets/svg/authorization/facebook.svg" alt="facebook" /></button>
-                            <button disabled className="w-[96px] h-[31px] pl-[20px] border border-[#5970FF80] cursor-pointer rounded-[3px]"><img src="/src/assets/svg/authorization/yandex.svg" alt="yandex" /></button>
+                            <button disabled className="w-[96px] h-[31px] pl-[20px] border border-[#5970FF80] cursor-pointer rounded-[3px]"><img src="/assets/svg/authorization/facebook.svg" alt="google" /></button>
+                            <button disabled className="w-[96px] h-[31px] pl-[20px] border border-[#5970FF80] cursor-pointer rounded-[3px]"><img src="/assets/svg/authorization/facebook.svg" alt="facebook" /></button>
+                            <button disabled className="w-[96px] h-[31px] pl-[20px] border border-[#5970FF80] cursor-pointer rounded-[3px]"><img src="/assets/svg/authorization/yandex.svg" alt="yandex" /></button>
                         </div>
                     </div>
                 </div>
                 <div className="hidden w-[335px] h-[356px] max-sm:block max-sm:mt-[49px]">
-                    <img src="/src/assets/img/characters.png" alt="characters" className="" />
+                    <img src="/assets/img/characters.png" alt="characters" className="" />
                 </div>
                 
             </section>

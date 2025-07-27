@@ -8,27 +8,27 @@ const Main = () => {
 
     const [cards, setCards] = useState([
         {
-            img: '/src/assets/svg/main/time.svg',
+            img: '/assets/svg/main/time.svg',
             alt: 'time',
             text: 'Высокая и оперативная скорость обработки заявки',
         },
         {
-            img: '/src/assets/svg/main/search.svg',
+            img: '/assets/svg/main/search.svg',
             alt: 'search',
             text: 'Огромная комплексная база данных, обеспечивающая объективный ответ на запрос',
         },
         {
-            img: '/src/assets/svg/main/lock.svg',
+            img: '/assets/svg/main/lock.svg',
             alt: 'lock',
             text: 'Защита конфеденциальных сведений, не подлежащих разглашению по федеральному законодательству',
         },
         {
-            img: '/src/assets/svg/main/search.svg',
+            img: '/assets/svg/main/search.svg',
             alt: 'search',
             text: 'Высокая и оперативная скорость обработки заявки',
         },
         {
-            img: '/src/assets/svg/main/search.svg',
+            img: '/assets/svg/main/search.svg',
             alt: 'search',
             text: 'Высокая и оперативная скорость обработки заявки',
         },
@@ -42,8 +42,8 @@ const Main = () => {
             oldPrice: '1 200 ₽',
             installment: 'или 150 ₽/мес. при рассрочке на 24 мес.',
             services: ['Безлимитная история запросов', 'Безопасная сделка', 'Поддержка 24/7'],
-            img: '/src/assets/svg/main/light-bulb.svg',
-            imgMobail: '/src/assets/svg/main/mobail/light-bulb.svg',
+            img: '/assets/svg/main/light-bulb.svg',
+            imgMobail: '/assets/svg/main/mobail/light-bulb.svg',
             alt: 'light-bulb',
         },
         {
@@ -53,8 +53,8 @@ const Main = () => {
             oldPrice: '2 600 ₽',
             installment: 'или 279 ₽/мес. при рассрочке на 24 мес.',
             services: ['Все пункты тарифа Beginner', 'Экспорт истории', 'Рекомендации по приоритетам'],
-            img: '/src/assets/svg/main/target.svg',
-            imgMobail: '/src/assets/svg/main/mobail/target.svg',
+            img: '/assets/svg/main/target.svg',
+            imgMobail: '/assets/svg/main/mobail/target.svg',
             alt: 'target',
         },
         {
@@ -64,8 +64,8 @@ const Main = () => {
             oldPrice: '3 700 ₽',
             installment: false,
             services: ['Все пункты тарифа Pro', 'Безлимитное количество запросов', 'Приоритетная поддержка'],
-            img: '/src/assets/svg/main/laptop.svg',
-            imgMobail: '/src/assets/svg/main/mobail/laptop.svg',
+            img: '/assets/svg/main/laptop.svg',
+            imgMobail: '/assets/svg/main/mobail/laptop.svg',
             alt: 'laptop',
         },
     ]
@@ -110,18 +110,18 @@ const Main = () => {
                         Запросить данные
                     </button>
                 </div>
-                <img className='w-[600px] h-[600px] max-sm:w-[347px] max-sm:h-[342px] max-sm:mt-[24px]' src="/src/assets/img/Illustration.png" alt="Illustration" />
+                <img className='w-[600px] h-[600px] max-sm:w-[347px] max-sm:h-[342px] max-sm:mt-[24px]' src="/assets/img/Illustration.png" alt="Illustration" />
             </section>
             <section className='mt-[110px]'>
                 <h1 style={{ fontFamily: 'Ferry' }} className='text-[45px] max-sm:text-[28px]'>Почему именно мы</h1>
                 <div className='mt-[70px] mb-[70px] flex items-center max-sm:ml-[-14px]' >
-                    <button onClick={cardPrev} className='cursor-pointer w-[39px] h-[39px]'><img src="/src/assets/svg/main/left-arrow.svg" alt="left-arrow" style={{ maxWidth: 'none' }} /></button>
+                    <button onClick={cardPrev} className='cursor-pointer w-[39px] h-[39px]'><img src="/assets/svg/main/left-arrow.svg" alt="left-arrow" style={{ maxWidth: 'none' }} /></button>
                     <div className=' flex gap-[30px] max-sm:hidden'>{slider(0, 3)} </div>
                     <div className=' flex gap-[30px] sm:hidden'>{slider(0, 1)} </div>
-                    <button onClick={cardNext} className='cursor-pointer w-[39px] h-[39px]'><img src="/src/assets/svg/main/right-arrow.svg" alt="right-arrow" style={{ maxWidth: 'none' }} /></button>
+                    <button onClick={cardNext} className='cursor-pointer w-[39px] h-[39px]'><img src="/assets/svg/main/right-arrow.svg" alt="right-arrow" style={{ maxWidth: 'none' }} /></button>
                 </div>
-                <img className='w-[1307px] h-[575px] max-sm:hidden' src="/src/assets/img/Illustration2.png" alt="Illustration2" />
-                <img className='w-[361px] h-[400px] sm:hidden' src="/src/assets/img/Illustration2-mobail.png" alt="Illustration2-mobail" />
+                <img className='w-[1307px] h-[575px] max-sm:hidden' src="/assets/img/Illustration2.png" alt="Illustration2" />
+                <img className='w-[361px] h-[400px] sm:hidden' src="/assets/img/Illustration2-mobail.png" alt="Illustration2-mobail" />
             </section>
             <section>
                 <h1 style={{ fontFamily: 'Ferry' }} className='mt-[108px] mb-[70px] text-[45px] max-sm:mt-[74px] max-sm:mb-[37px] max-sm:text-[28px]'>НАШИ ТАРИФЫ</h1>
@@ -148,7 +148,7 @@ const Main = () => {
                                 <ul className='mt-[90px] mb-[55px] max-sm:mt-[110px]'>
                                     <h2 className='font-medium text-[20px] mb-[5px] max-sm:text-[18px]'>В тариф входит:</h2>
                                     {item.services.map((service, serviceIndex) => (
-                                        <li key={serviceIndex} className='flex gap-2 text-[18px] max-sm:text-[16px]'><img src='/src/assets/svg/main/check-mark.svg' alt="check-mark" />{service}</li>
+                                        <li key={serviceIndex} className='flex gap-2 text-[18px] max-sm:text-[16px]'><img src='/assets/svg/main/check-mark.svg' alt="check-mark" />{service}</li>
                                     ))}
                                 </ul>
                                 <button className={`${authorization && index === 0 ? 'bg-[#D2D2D2]' : 'bg-[#5970FF]'} w-[355px] h-[59px] mb-[24px] text-[20px] rounded-[5px] cursor-pointer max-sm:text-[18px] max-sm:w-[286px] max-sm:mb-[31px]`}>

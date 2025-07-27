@@ -3,7 +3,7 @@ const Footer = () => {
         <footer className="h-[137px] bg-[#029491] flex items-center justify-between pl-[60px] pr-[45px] max-sm:px-[20px] max-sm:py-[25px]">
             <img
                 className="w-[140px] h-[58px]  max-sm:mt-[-55px] max-sm:w-[107px] max-sm:h-[40px]"
-                src="/src/assets/svg/logo-footer.svg"
+                src="/assets/svg/logo-footer.svg"
                 alt="Logo"
 
             />
