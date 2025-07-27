@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Ferry';
+  src: url('../assets/font/ferry.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+  font-family: Inter, Ferry;
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 768px){
+  body {
+    width: 375px;
+  }
+}
+
+.card-shadow {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

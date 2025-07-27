@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./"],
+      // "@/src*": ["./src*"],
+      // "@/api*": ["./src/api*"],
+      // "@/components*": ["./src/components*"],
+      // "@/redux*": ["./src/redux*"],
+      // "@/styles*": ["./src/styles*"],
+      // "@/types*": ["./src/types*"],
+    }
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}

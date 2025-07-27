@@ -1,0 +1,87 @@
+.input {
+  width: 242px;
+  height: 43px;
+  border-color: #c7c7c7;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 20px;
+  padding-left: 17px;
+}
+
+.input:focus {
+  outline: none; /* убираем стандартный outline */
+  color: inherit; /* сохраняем цвет текста */
+}
+
+.input::placeholder {
+  color: #949494;
+  opacity: 40%;
+  outline-style: none;
+  text-align: center;
+  transform: translateX(-17px);
+}
+
+.ant-select-selection-item {
+  padding-left: 6px !important;
+}
+.ant-select-selector {
+  border: 1px solid #c7c7c7 !important;
+}
+
+.error {
+  border-color: #ff5959;
+  color: #ff5959 !important;
+}
+.error::placeholder {
+  color: #ff5959;
+  opacity: 100%;
+}
+
+.custom-checkbox .ant-checkbox-inner {
+  border-radius: 0;
+  border-color: #D9D9D9;
+  width: 20px;
+  height: 20px;
+}
+.custom-checkbox .ant-checkbox-label{
+  color: #D9D9D9;
+  margin-left: 9px;
+  font-size: 18px;
+}
+.custom-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #ffffff;
+}
+
+.custom-checkbox .ant-checkbox-checked .ant-checkbox-inner::after {
+  content: "";
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: url('/src/assets/svg/search/check-mark.svg') no-repeat center;
+  background-size: contain;
+  border: none;
+  transform: translate(-50%, -50%);
+}
+
+.custom-checkbox:hover .ant-checkbox-inner{
+  background-color: #ffffff !important;
+  border-color: #000000 !important;
+}
+.custom-checkbox:hover .ant-checkbox-label{
+  color: #000000;
+}
+
+.custom-checkbox-active .ant-checkbox-inner{
+  border-color: #000000;
+}
+.custom-checkbox-active .ant-checkbox-label{
+  color: #000000;
+}
+
+
+
+
+
+
+
+
