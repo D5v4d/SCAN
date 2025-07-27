@@ -111,7 +111,7 @@ const initialState: HistogramItem = {
   },
   listDocuments: {
     data: [],
-    isLoadinglistDocuments: true,
+    isLoadinglistDocuments: false,
     isErrorlistDocuments: false,
   },
 };
