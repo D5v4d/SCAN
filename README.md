@@ -27,7 +27,4 @@ sf_student9	- DTdEwAn
 Диапазон поиска - с 2020г по 2025г
 Количество документов в выдаче - 10
 
-## Vercel
-https://scan-snowy.vercel.app/
-
 
